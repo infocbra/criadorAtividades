@@ -1,0 +1,141 @@
+html{
+  height:100%;
+}
+body{
+  height:100%;
+  font-family: Calibri;
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container{
+  position: absolute;
+  bottom: 0; top: 0; left: 0; right: 0;
+  text-align: center;
+}
+.header{
+  height: 50px;
+  background-color: rgb(255,255,255);
+}
+
+.clueBlock{
+  position: relative;
+  margin: 0 auto;
+  width: 660px;
+}
+.clueDirection{
+  text-align: left;
+  margin: 1em 0 0.25em 122px;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+.line{
+}
+.word, .clue, .lineNum{
+  display: inline-block;
+  height: 1.4em;  
+  padding: 0 5px;
+}
+.word{
+  text-align: right;  
+  width: 100px;
+  margin: 0 20px 0 0;
+}
+.clue{
+  width: 500px;
+  margin: 0 0 4px 0;
+}
+.lineNum{
+  position: absolute;
+  left: 120px;
+  text-align: left;
+  font: 0.75em calibri;
+  line-height: 1.8em;
+  color: rgb(112,112,112);
+}
+.clueReadOnly
+{
+  border-color: rgba(0,0,0,0);
+  margin: 0;
+  outline: 0;
+  color:#303030;
+  background:none;
+}
+
+.crossword{
+  display: block;  
+  background-color: rgb(32,32,32);  
+}
+.square{  
+  margin: 0 1px 1px 0;
+  display: inline-block;
+  position: relative;
+  font: 24px Calibri;
+  width: 1.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+  vertical-align: top;
+}
+.char:focus{
+  -webkit-box-shadow: 0 0 0 2px rgb(255,32,32);
+  -moz-box-shadow: 0 0 0 2px rgb(255,32,32);
+  box-shadow: inset 0 0 0 2px rgb(255,32,32);  
+}
+.char {
+  font-size:24px;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 1px 0 0 -1px;
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  background-color: rgb(255,255,255);  
+}
+.charReadOnly:focus{
+  -webkit-box-shadow: 0 !important;
+  -moz-box-shadow: 0 !important;
+  box-shadow: 0 !important;
+  
+border-color: rgba(0,0,0,0);
+  margin: 0;
+  outline: 0;
+  color:#303030; 
+}
+
+.num{
+  position: absolute;
+  top: 0; left: 0;
+  text-align: left;
+  color: rgb(112,112,112);
+  font-size: 0.5em;
+  line-height: 1em;
+  pointer-events:none;
+}
+
+.hide{
+  visibility: hidden;
+}
+.disabled{
+  display: none !important;
+}
+
+.btn{
+  display: inline-block;
+  margin: 10px 4px 10px;
+  width: 172px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  background-color: rgb(232,80,88);
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(240,96,100);
+}
